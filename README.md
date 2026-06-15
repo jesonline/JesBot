@@ -4,13 +4,21 @@
 
 ---
 
-## What is this?
+## So what is this?
 
-JES is an AI-powered portfolio chatbot built as a direct ode to ELIZA — the 1966 rule-based chatbot by Joseph Weizenbaum that first sparked my fascination with human-computer interaction at age 13.
+When I was 13, I found a program called ELIZA on my family computer. My elder cousin controlled the computer, so we only had a small window of time on it after school. One day, bored after a game, I clicked on this strange icon and started talking to it.
 
-I was captivated by the illusion of intelligence before I understood what intelligence was. That curiosity never left. So when I decided to build a portfolio assistant, I asked myself: what better way to show how much I love AI than to turn myself into one?
+The computer talked back.
 
-Unlike ELIZA, which simulated understanding without having any — JES actually knows what she is talking about. Same aesthetic. Very different brain underneath.
+I asked it everything. Who are you? Where are you from? What do you look like? The kind of questions you ask when you forget you are talking to a computer from 1966. It answered, sort of. But something felt off. I quickly noticed it was recycling the same phrases, taking my words and paraphrasing them back in odd ways. "Have you always felt this way?" "Are you sure?"
+
+So naturally, I tried to break it.
+
+I spent that afternoon throwing increasingly unhinged prompts at ELIZA to find the cracks. I was 13. I did not know it at the time, but that was my first experience of prompt engineering.
+
+ELIZA was not really an AI. It was a rule-based chatbot from MIT, 1966, with no real understanding whatsoever. But it started something in me that never really went away.
+
+So when I decided to build a portfolio assistant, I thought - what better way to show how much I love AI than to turn myself into one? JES is my ode to ELIZA. Same aesthetic. Very different brain underneath.
 
 ---
 
@@ -26,16 +34,18 @@ The aesthetic is a deliberate tribute to the world ELIZA came from: 1960s and 70
 
 ## The Design Process — Figma
 
-Before building, I designed the UI in Figma — mapping out the terminal layout, colour palette, and typography.
+I designed the UI in Figma before building anything. Every choice intentional:
 
 ![JES Figma design](JesBot_figma.png)
 
 - Background: `#0A1A0A` forest green
 - JES responses: `#FF69B4` magenta
 - User input: `#FFFFFF` white
-- Font: VT323 (Google Fonts)
-- Dashed pink dividers, scanline overlay, blinking cursor, typewriter effect
-
+- Font: VT323 (Google Fonts) - the most authentic CRT terminal feel
+- Dashed pink dividers
+- Scanline overlay
+- Blinking block cursor
+- Typewriter effect on JES responses
 ---
 
 ## The Final Product
@@ -48,24 +58,25 @@ Before building, I designed the UI in Figma — mapping out the terminal layout,
 
 ## Why "JES"?
 
-My initials are JS. Say them fast enough and you get Jes. It started as a nickname my school best friend and I came up with when creating alter egos for each other. But Jes became more than a nickname — she is my alter ego. Bolder, more confident, more get-it-done. When it came to building an AI that would represent me to the world, who better to be than Jes?
+My initials are JS. Say them fast enough and you get Jes. It started as a nickname my school best friend and I came up with, without putting a lot of thought into it. And Jes stuck around. She is my alter ego - the bolder, more confident, more get-it-done version of me. When it came to building an AI that would represent me to the world, who better to be than Jes?
 
 ---
 
 ## How it works
 
-- Frontend: vanilla HTML, CSS, JavaScript — single file, no frameworks
+- Frontend: vanilla HTML, CSS, JavaScript - one single file, no frameworks
 - AI: Claude Sonnet 4.6 via Anthropic API
 - Hosting: Netlify
-- System prompt trains JES on my background, experience, projects, and personality
+- The system prompt is where the real work is - it trains JES on my background, experience, projects, personality, and the stories behind all of it
 
 ---
 
-## To run locally
+## A note on building with AI
 
-1. Clone this repo
-2. Add your Anthropic API key to the `ANTHROPIC_API_KEY` variable in `index.html`
-3. Open `index.html` in a browser
+I built this using Claude as a coding assistant. I came up with the concept, designed the UI in Figma, wrote the entire system prompt, and made every product and design decision along the way. Claude handled the implementation.
+
+Honestly, using AI as a tool to actually build something felt like the most fitting way to make this. I did not want to just talk about loving AI. I wanted to show it.
+
 
 ---
 
